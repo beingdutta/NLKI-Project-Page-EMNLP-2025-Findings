@@ -7,6 +7,7 @@
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/index.css" rel="stylesheet" />
 
   <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -16,115 +17,6 @@
   <meta property="og:description" content="Project page for NLKI — improving small vision–language models on commonsense VQA with retrieved facts + LLM explanations." />
   <meta property="og:type" content="website" />
 
-  <style>
-    :root{
-      --brand:#0d6efd;
-      --bg-soft:#f7f9fc;
-    }
-    body{
-      scroll-behavior:smooth;
-    }
-    .navbar{
-      backdrop-filter: saturate(180%) blur(10px);
-      background: rgba(255,255,255,0.8)!important;
-    }
-    .hero{
-      padding-top: 7rem;
-      padding-bottom: 3rem;
-      background: linear-gradient(180deg, #ffffff 0%, var(--bg-soft) 100%);
-    }
-    .author a{
-      text-decoration:none;
-    }
-    .badge-link{
-      text-decoration:none;
-    }
-    .teaser a {
-      cursor: zoom-in;
-    }
-    .teaser{
-      border-radius: .75rem;
-      border: 1px solid #e9ecef;
-      overflow:hidden;
-      background:#fff;
-      box-shadow: 0 10px 30px rgba(13,110,253,.05);
-    }
-    /* Custom Carousel Styles */
-    #imageSlider .carousel-inner {
-      width: 70%;
-      margin: 0 auto;
-      border-radius: .5rem; /* Optional: for aesthetics */
-      overflow: hidden;
-    }
-    #imageSlider .carousel-control-prev,
-    #imageSlider .carousel-control-next {
-      width: 15%;
-    }
-    #imageSlider .carousel-control-prev-icon,
-    #imageSlider .carousel-control-next-icon {
-      filter: invert(1); /* Invert the default white icon to black for contrast */
-    }
-    #imageSlider .carousel-indicators {
-      position: static; /* Position indicators below the image */
-      margin-top: 1rem;
-    }
-    #imageSlider .carousel-indicators [data-bs-target] {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: #888; /* Gray for inactive dots */
-      border: 0; /* Remove default border */
-    }
-    #imageSlider .carousel-indicators .active {
-      background-color: #000; /* Black for the active dot */
-    }
-    body > section:nth-of-type(even){
-      background:var(--bg-soft);
-    }
-    .section-spacer{
-      padding-top:4rem;
-      padding-bottom:3rem;
-    }
-    .code, pre{
-      background:#0b1020;
-      color:#e6edf3;
-      border-radius:.5rem;
-      padding:1rem;
-      overflow:auto;
-    }
-    .placeholder-img{
-      width:100%;
-      aspect-ratio:16/9;
-      border:1px dashed #ced4da;
-      border-radius:.5rem;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
-      color:#6c757d;
-      background:
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675"><rect width="100%" height="100%" fill="%23f8f9fa"/><g fill="%236c757d" font-family="Arial,Helvetica,sans-serif"><text x="50%" y="48%" dominant-baseline="middle" text-anchor="middle" font-size="36">Image / Figure Placeholder</text><text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="20">replace src with your figure</text></g></svg>') center/cover no-repeat;
-    }
-    .mini-card{
-      border:1px solid #e9ecef;
-      border-radius:.75rem;
-      padding:1rem;
-      height:100%;
-      background:#fff;
-    }
-    .foot{
-      background:#0b0f1a;
-      color:#aab3c5;
-      padding:3rem 0 2rem;
-    }
-    .foot a{ color:#dbe4ff; }
-    .sticky-cta{
-      position: fixed;
-      right: 1rem;
-      bottom: 1rem;
-      z-index: 1040;
-    }
-  </style>
 </head>
 <body>
 
@@ -168,10 +60,10 @@
           </div>
 
           <div class="author small">
-            <span class="me-2"><a href="#" target="_blank">Aritra Dutta</a><sup>1</sup></span>
-            <span class="me-2"><a href="#" target="_blank">Swapnanil Mukherjee</a><sup>2</sup></span>
-            <span class="me-2"><a href="#" target="_blank">Deepanway Ghoshal</a><sup>3</sup></span>
-            <span class="me-2"><a href="#" target="_blank">Somak Aditya</a><sup>1</sup></span>
+            <span class="me-2"><a href="#">Aritra Dutta</a><sup>1</sup></span>
+            <span class="me-2"><a href="#">Swapnanil Mukherjee</a><sup>2</sup></span>
+            <span class="me-2"><a href="#">Deepanway Ghoshal</a><sup>3</sup></span>
+            <span class="me-2"><a href="#">Somak Aditya</a><sup>1</sup></span>
             <div class="text-muted mt-1">1 IIT Kharagpur &nbsp; 2 Ashoka University &nbsp; 3 Google DeepMind</div>
           </div>
         </div>
@@ -272,6 +164,15 @@
           <div class="carousel-item">
             <img src="assets/demos/demo-3.jpg" class="d-block w-100" alt="Slide 3">
           </div>
+          <div class="carousel-item">
+            <img src="assets/demos/demo-4.jpg" class="d-block w-100" alt="Slide 4">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/demos/demo-5.jpg" class="d-block w-100" alt="Slide 5">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/demos/demo-6.jpg" class="d-block w-100" alt="Slide 6">
+          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -285,6 +186,9 @@
           <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="5" aria-label="Slide 6"></button>
         </div>
       </div>
     </div>
@@ -380,7 +284,7 @@
               <div class="fw-semibold"><i class="bi bi-file-earmark-text me-1"></i> Paper (PDF)</div>
               <div class="small text-muted">Camera-ready version for EMNLP Findings.</div>
             </div>
-            <a class="btn btn-sm btn-primary" href="#" target="_blank">Open</a>
+            <a class="btn btn-sm btn-primary" href="assets/NLKI.pdf" target="_blank">Open</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -389,7 +293,7 @@
               <div class="fw-semibold"><i class="bi bi-github me-1"></i> Code</div>
               <div class="small text-muted">Training scripts, checkpoints, and data preparation.</div>
             </div>
-            <a class="btn btn-sm btn-dark" href="#" target="_blank">GitHub</a>
+            <a class="btn btn-sm btn-dark" href="https://github.com/beingdutta/NLKI-Lightweight-Natural-Language-Knowledge-Integration-Framework" target="_blank">GitHub</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -424,7 +328,7 @@
   booktitle = {Findings of the Association for Computational Linguistics: EMNLP},
   year      = {2025}
 }</code></pre>
-      <p class="text-muted small mb-0">Update the citation details (year/venue) as needed.</p>
+      <p class="text-muted small mb-0">Update as needed.</p>
     </div>
   </section>
 
@@ -471,7 +375,7 @@
         <div class="col-lg-8">
           <div class="mini-card">
             <div class="fw-semibold mb-2"><i class="bi bi-envelope-open me-1"></i> Contact</div>
-            <p class="small text-muted mb-2">For questions, please email <a href="mailto:you@example.com">you@example.com</a>. Replace with your contact details.</p>
+            <p class="small text-muted mb-2">For questions, please email <a href="mailto:traillab@gmail.com">traillab@gmail.com</a>.</p>
             <p class="small text-muted mb-0">If you use our code or ideas, please cite the paper above. Thanks!</p>
           </div>
         </div>
@@ -514,27 +418,7 @@
     <a class="btn btn-primary rounded-pill shadow" href="#downloads"><i class="bi bi-download me-2"></i>Get Resources</a>
   </div>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // set year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // optional: smooth scroll for nav links in older browsers
-    document.querySelectorAll('a.nav-link, a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', (e)=>{
-        const id = a.getAttribute('href');
-        if(id && id.startsWith('#') && document.querySelector(id)){
-          e.preventDefault();
-          const y = document.querySelector(id).getBoundingClientRect().top + window.pageYOffset - 72; // navbar offset
-          window.scrollTo({top:y, behavior:'smooth'});
-          if(window.innerWidth < 992){
-            const nav = document.getElementById('nav');
-            if(nav && nav.classList.contains('show')) new bootstrap.Collapse(nav).hide();
-          }
-        }
-      });
-    });
-  </script>
+  <script src="js/index.js"></script>
 </body>
 </html>
