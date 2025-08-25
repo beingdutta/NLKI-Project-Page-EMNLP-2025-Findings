@@ -7,7 +7,7 @@
 
 ## 🔗 Links
 - 📄 [Paper (EMNLP Findings 2025)](https://arxiv.org/abs/XXXX.XXXXX)  
-- 🌍 [Project Website](https://beingdutta.github.io/NLKI-Lightweight-Natural-Language-Knowledge-Integration-Framework/)  
+- 🌍 [Project Website](https://beingdutta.github.io/NLKI-Project-Page-EMNLP-2025-Findings/)  
 - 💻 [Code Repository](https://github.com/beingdutta/NLKI-Lightweight-Natural-Language-Knowledge-Integration-Framework)  
 
 ---
