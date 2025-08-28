@@ -8,6 +8,7 @@
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="styles/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -69,7 +70,7 @@
         </div>
 
         <div class="col-lg-5">
-          <div class="teaser p-2">
+          <div class="teaser p-2" data-aos="zoom-in">
             <div class="placeholder-img" title="Replace with your teaser figure">
               <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal">
                 <img src="assets/block-diagram.jpg" alt="Teaser figure for NLKI" class="img-fluid">
@@ -83,7 +84,7 @@
   </header>
 
   <!-- Abstract -->
-  <section id="abstract" class="section-spacer">
+  <section id="abstract" class="section-spacer" data-aos="fade-up">
     <div class="container">
       <h2 class="h3 mb-3">Abstract</h2>
       <p class="fs-6">
@@ -93,7 +94,7 @@
   </section>
 
   <!-- Highlights -->
-  <section id="highlights" class="section-spacer">
+  <section id="highlights" class="section-spacer" data-aos="fade-up">
     <div class="container">
       <h2 class="h3 mb-4">Highlights</h2>
       <div class="row g-3">
@@ -129,7 +130,7 @@
   <section id="method" class="section-spacer">
     <div class="container">
       <div class="row g-4 align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
           <h2 class="h3 mb-3">Method: NLKI Pipeline</h2>
           <ol class="small">
             <li><strong>Visual context extraction</strong>: dense / region captions + detected objects.</li>
@@ -140,7 +141,7 @@
           </ol>
           <p class="text-muted small mb-0">All components are modular; swap retriever/LLM/reader as needed. Replace this text with your final description.</p>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
           <div class="placeholder-img" title="Replace with pipeline diagram">
             <img src="assets/paper-plot-hero.png" alt="NLKI Pipeline Diagram" class="img-fluid">
           </div>
@@ -150,7 +151,7 @@
   </section>
 
   <!-- Image Slider -->
-  <section id="image-slider" class="section-spacer">
+  <section id="image-slider" class="section-spacer" data-aos="fade-up">
     <div class="container">
       <h2 class="h3 mb-4 text-center">Demonstration of NLKI</h2>
       <div id="imageSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -199,7 +200,7 @@
     <div class="container">
       <h2 class="h3 mb-4">Results</h2>
       <div class="row g-4">
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-up">
           <div class="mini-card">
             <div class="placeholder-img mb-3" title="Replace with accuracy vs model-size figure">
               <img src="assets/paper-plot-1.png" alt="Ablation table placeholder" class="img-fluid">
@@ -207,7 +208,7 @@
             <div class="small text-muted">Figure placeholder — accuracy vs model size (AOKVQA Val). Add caption here.</div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
           <div class="mini-card">
             <div class="placeholder-img mb-3" title="Replace with ablation table/plot">
               <img src="assets/paper-plot-2.png" alt="Ablation table placeholder" class="img-fluid">
@@ -219,19 +220,19 @@
 
       <div class="row g-3 mt-1">
         <div class="col-md-4">
-          <div class="mini-card h-100">
+          <div class="mini-card h-100" data-aos="fade-up" data-aos-delay="100">
             <div class="fw-semibold">CRIC</div>
             <div class="text-muted small">+2–3% with Type-5 explanations, further +~2–3% with SCE on noisy labels.</div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="mini-card h-100">
+          <div class="mini-card h-100" data-aos="fade-up" data-aos-delay="200">
             <div class="fw-semibold">AOKVQA</div>
             <div class="text-muted small">FLAVA: ~+13% absolute with NLKI; matches or surpasses 1–4B generative VLMs.</div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="mini-card h-100">
+          <div class="mini-card h-100" data-aos="fade-up" data-aos-delay="300">
             <div class="fw-semibold">e-SNLI-VE</div>
             <div class="text-muted small">Cleaner labels: CE suffices; consistent gains from NLKI without heavy regularisation.</div>
           </div>
@@ -241,7 +242,7 @@
   </section>
 
   <!-- Datasets -->
-  <section id="datasets" class="section-spacer">
+  <section id="datasets" class="section-spacer" data-aos="fade-up">
     <div class="container">
       <h2 class="h3 mb-3">Datasets</h2>
       <div class="table-responsive">
@@ -433,6 +434,13 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // Animation duration in milliseconds
+      once: true,    // Whether animation should happen only once
+    });
+  </script>
   <script src="js/index.js"></script>
 </body>
 </html>
