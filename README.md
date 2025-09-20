@@ -6,7 +6,7 @@
 ---
 
 ## 🔗 Links
-- 📄 [Paper (EMNLP Findings 2025)](https://arxiv.org/abs/XXXX.XXXXX)  
+- 📄 [Paper (EMNLP Findings 2025)](https://arxiv.org/abs/2508.19724)  
 - 🌍 [Project Website](https://beingdutta.github.io/NLKI-Project-Page-EMNLP-2025-Findings/)  
 - 💻 [Code Repository](https://github.com/beingdutta/NLKI-Lightweight-Natural-Language-Knowledge-Integration-Framework)  
 
@@ -28,9 +28,12 @@ Our approach improves accuracy by **up to 7%** across CRIC, AOKVQA, and e-SNLI-V
 If you use NLKI, please cite our work:
 
 ```bibtex
-@inproceedings{dutta2025nlki,
-  title={NLKI: A Lightweight Natural Language Knowledge Integration Framework for Improving Small VLMs in Commonsense VQA Tasks},
-  author={Dutta, Aritra and Mukherjee, Swapnanil and Ghosal, Deepanway and Aditya, Somak},
-  booktitle={Findings of the Association for Computational Linguistics: EMNLP},
-  year={2025}
+@misc{dutta2025nlkilightweightnaturallanguage,
+      title={NLKI: A lightweight Natural Language Knowledge Integration Framework for Improving Small VLMs in Commonsense VQA Tasks}, 
+      author={Aritra Dutta and Swapnanil Mukherjee and Deepanway Ghosal and Somak Aditya},
+      year={2025},
+      eprint={2508.19724},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2508.19724}, 
 }
